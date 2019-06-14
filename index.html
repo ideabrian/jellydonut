@@ -12,12 +12,12 @@
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<noscript>You need to enable JavaScript to run this app.</noscript>
-		<div id="root"></div>
-	  	<div id="Welcome to  Jelly  Donut">
+		<!-- <div id="root"></div> -->
+	  	<div">
 	  		<!---Start navigation Bar -->
 	    	<nav class="navbar navbar-expand-lg navbar fixed-top  navbar-light bg-light">
-		 		<a class="navbar-brand" href="#Welcome">
-    				<img src="images/donut_favicon.png" width="50" height="50" class="d-inline-block" alt=""> Jelly Donut
+		 		<a class="navbar-brand" href="#welcome">
+    				<img src="images/donut_favicon.png" width="50" height="50" class="d-inline-block" alt="Donut Logo"> Jelly Donut
 		 		</a>
 		 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		    		<span class="navbar-toggler-icon"></span>
@@ -25,20 +25,23 @@
 			  	<div class="collapse navbar-collapse" id="navbarText">
 			    	<ul class="navbar-nav ml-auto">
 			      		<li class="nav-item">
-			        		<a class="nav-link" href="#Welcome">Open</a>
-			      		</li>
+			        		<a class="nav-link" href="#welcome">Welcome</a>
+						  </li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="#Restaurant">Donuts</a>
+					    	<a class="nav-link" href="#Menu">Donuts</a>
 					    </li>
 					    
 					    <li class="nav-item">
-					    	<a class="nav-link" href="#Coffee">Coffee</a>
+					    	<a class="nav-link" href="#Coffee">Open</a>
 					    </li>
 					    <li class="nav-item">
 					    	<a class="nav-link" href="#OurLocation">Our Location</a>
 					    </li>
 					    <li class="nav-item">
-					    	<a href="#" class="language" ><img src="images/sfg.png" class="flag" alt="SF Giants" /></a>
+					    	<a href="#Giants" class="language" ><img src="images/sfg.png" class="flag" alt="SF Giants" /></a>
 					    	<!-- <a href="index.html" class="language" rel="en-En"><img src="images/english.ico" class="flag" alt="English" /></a> -->
 					    </li>
 				    </ul>
@@ -52,12 +55,12 @@
 				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 				    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
 				</ol>
-				<div class="carousel-inner">
+				<div class="carousel-inner" id="welcome">
 					<div class="carousel-item active">
 				    	<img class="d-block w-100 img-fluid img-slider" src="images/slider1.jpg" alt="First slide">
 				    	<div class="carousel-caption">
 						    <h2>Welcome!</h2>
-							<p>...</p>
+							<p>to Jelly Donut</p>
 						</div>
 				    </div>
 				    <!-- <div class="carousel-item">
@@ -92,15 +95,23 @@
 	    		<div class="col navMenu">
 	     		 	<h2 class="text-center" >~ DONUTS ~</h2>
 	    		</div>
-  			</div> -->
+			  </div> -->
+			<div class="row" id="about">
+				<div class="col navMenu">
+					<h2 class="text-center">~ About ~</h2>
+				</div>
+			</div>
+
   			<div class="row bg-light" >
   				<div class="col-md-6">
+					  <br/>
   					<h3>Jelly Donut</h3>
   					<p>Thanks for stopping by. We are the original, authentic Jelly Donut, serving delicious donuts baked  fresh daily.</p>
   					<h5>A Mission Experience</h5>
   					<p>When on 24th in the Mission, stop by and grab a pink box.</p>
   				</div>
   				<div class="col-md-6" data-aos="fade-up">
+					  <br/>
   					<img class="img-fluid" src="images/location.jpg">
   				</div>
   			</div>
@@ -111,21 +122,37 @@
   				</div>
   				<div class="col-md-6 order-md-12 order-1">
   					<h3>Family Owned</h3>
-  					<p>A Family owned and operated business since 1989
+  					<p>A family-owned_and-operated business since 1989
 
 					  </p>
-  					<h5>A Neiborhood Experience</h5>
-  					<p>We love our neighbors. Come in and say hi. "hi!"</p>
+  					<h5>A Neighborhood Experience</h5>
+  					<p>We love our Mission SF neighbors. Come in and say hi. "hi!"</p>
   				</div>
   			</div>
   			<!--- End of Restaurant -->
   			<!--- Start of Menu-->
 			<div class="row" id="Menu">
 				<div class="col navMenu">
-	     		 	<h2 class="text-center" >~ Menu ~</h2>
+	     		 	<h2 class="text-center" >~ Donuts ~</h2>
 				</div>
 			</div>
 			<div class="row bg-light">
+
+				<div class="col-md-4" data-aos="slide-up">
+					<div class="card view zoom">
+						<img class="card-img-top img-fluid " src="images/jelly_donut.png">
+						<div class="card-body">
+							<h5 class="card-title">~ Deluxe ~</h5>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Jelly Filled/li>
+								<li class="list-group-item">Apple Fritter</li>
+								<li class="list-group-item">Buttermilk</li>
+								<li class="list-group-item">Twist</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
 				<div class="col-md-4" data-aos="slide-up">
 					<div class="card view zoom">
   						<img class="card-img-top img-fluid " src="images/meat-menu.jpg">
@@ -134,41 +161,25 @@
 					    	<ul class="list-group list-group-flush">
 							    <li class="list-group-item">Glazed</li>
 							    <li class="list-group-item">Chocolate</li>
-							 	<li class="list-group-item">Maple</li>
-							 	<li class="list-group-item">Apple Fritter</li>
-							 	<li class="list-group-item">Buttermilk</li>
+								 <li class="list-group-item">Old Fashion</li>
+								<li class="list-group-item">Cinnamon Roll</li>
+
 							</ul>
 					  	</div>
 					</div>
 				</div>
 
-				<div class="col-md-4" data-aos="slide-up">
-					<div class="card view zoom">
-						<img class="card-img-top img-fluid " src="images/meat-menu.jpg">
-						<div class="card-body">
-							<h5 class="card-title">~ Best with Coffee ~</h5>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Glazed</li>
-								<li class="list-group-item">Chocolate</li>
-								<li class="list-group-item">Maple</li>
-								<li class="list-group-item">Apple Fritter</li>
-								<li class="list-group-item">Buttermilk</li>
-							</ul>
-						</div>
-					</div>
-				</div>
 
 				<div class="col-md-4" data-aos="slide-up">
 					<div class="card view zoom">
-						<img class="card-img-top img-fluid " src="images/meat-menu.jpg">
+						<img class="card-img-top img-fluid " src="images/glazed.jpg">
 						<div class="card-body">
-							<h5 class="card-title">~ Best with Coffee ~</h5>
+							<h5 class="card-title">~ Classic ~</h5>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Glazed</li>
-								<li class="list-group-item">Chocolate</li>
-								<li class="list-group-item">Maple</li>
-								<li class="list-group-item">Apple Fritter</li>
-								<li class="list-group-item">Buttermilk</li>
+								<li class="list-group-item">Raised</li>
+								<li class="list-group-item">Bars</li>
+								<li class="list-group-item">Cake</li>
+								<li class="list-group-item">Sprinkles</li>
 							</ul>
 						</div>
 					</div>
@@ -210,22 +221,17 @@
 			<!--- Start of Coffee-->
 			<div class="row" id="Coffee">
 				<div class="col navMenu">
-	     		 	<h2 class="text-center">~ Coffee ~</h2>
+	     		 	<h2 class="text-center">~ Hours ~</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class=" col-lg-12 reserve-container" data-aos="fade-up">
-					<!-- <img class="img-fluid image-reserve" src="images/reserve.jpg"> -->
+					<img class="img-fluid image-reserve" src="images/open2.jpg">
 					<div class="reserve-text col-lg-12 ">
-						<!-- <h1 class="text-center">Open</h1> -->
+						<h1 class="text-center">Open</h1>
 						<div class="row">
-							<!-- <div class="col-6">
-							   	<h2 class="text-center">Lunch</h2>
-							    <h5 class="text-center">12:00 - 15:00</h5>
-							</div> -->
-							<div class="col-6">
-							    <h2 class="text-center">Fresh</h2>
-							    <h5 class="text-center">06:00</h5>
+							<div class="col-12">
+							    <h2 class="text-center">6:00 - 22:00</h2>
 							</div>
 						</div>
 					</div>
@@ -235,7 +241,7 @@
 			<!-- <div class="row bg-light">
 				<div class="col">
 					<form>
-						<!-- <div class="form-row">
+						 <div class="form-row">
 						  	<div class="form-group col-6">
 						  		<h3>Reserve</h3>
 						  		<label for="inputDate"> Date</label>
@@ -271,20 +277,20 @@
 					  		<div class="col-md-4 col-md-offset-4">
 					  			<button type="submit" class="btn btn-secondary btn-block">Reserve</button>
 					  		</div>
-					  	</div> -->
+					  	</div>
 					</form>
 				</div>
-			</div>
+			</div>-->
 			<!--- End of Reserve -->
 			<!--- Start of Our Location -->
 			<div class="row" id="OurLocation">
 				<div class="col navMenu">
-					<h2 class="text-center">~ Our Location ~</h2>
+					<h2 class="text-center">~ Location ~</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div id="map" class="col-md-9 map"></div>
-				<div class="col-md-3">
+				<!-- <div id="map" class="col-md-9 map"></div> -->
+				<div class="col-md-12 text-center">
 					<h3>Address:</h3>
 					<p>3198  24th Street (Corner of 24th &  South Van Ness) </p>
 					<!-- <h3>Email:</h3>
@@ -292,27 +298,41 @@
 				</div>
 			</div>
 			<!--- End of Our Location -->
+
+					<div class="row" id="Giants">
+						<div class="col navMenu">
+							<h2 class="text-center">~ Go Giants ~</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class=" col-lg-12 reserve-container" data-aos="fade-up">
+							<img class="img-fluid image-reserve" src="images/panda.png">
+							<div class="reserve-text col-lg-12 ">
+								<!-- <h1 class="text-center">Go</h1> -->
+								<div class="row">
+									<div class="col-12">
+										<!-- <h2 class="text-center">6:00 - 22:00</h2> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
 			<div class="row footer bg-light">
 				<div class="col">
 					<!-- <p class="text-center">Follow us: <a class="social-icon" href="https://www.facebook.com/rubiktechnologiesShpk/"><i class="fab fa-facebook"></i></a> <a class="social-icon" href="https://www.instagram.com/rubiktechnologies/"><i class="fab fa-instagram"></i></a></p> -->
 				</div>
-				<!-- <div class="col">
+				<div class="col">
 					<p class="text-center">Copyright &copy; 2019</p>
 				</div>
 				<div class="col">
-					<p class="text-center">Powered by: <a href="https://rubik-technologies.com/">Rubik Technologies</a></p>
-				</div> -->
+					<p class="text-center">Built by: <a href="https://twitter.com/brianball" target="_blank">Brian Ball</a> using <a href="https://netlify.com" target="_blank">Netlify</a></p>
+				</div>
 			</div>
 		</div>
 		<footer class="container">
-			<div class= "row only-mobile">
-				<!-- <div class="col-6">
-					<a class="btn btn-primary btn-block text-center" href="tel:++390000000"><i class="fa fa-phone" aria-hidden="true"></i> Call</a>
-				</div>
-				<div class="col-6">
-					<a class="btn btn-success btn-block text-center" href="https://api.whatsapp.com/send?phone=+390000000"><i class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</a>
-				</div> -->
-			</div>
+			
 		</footer>
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
